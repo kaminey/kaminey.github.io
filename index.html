@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>E-commerce Shop(Single Item)</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background: #D9AAB7;
+                font-family: 'Lato', sans-serif;
+            }
+
+            #box {
+                height: 350px;
+                width: 540px;
+                margin: 200px auto;
+                background: #F5F5F5;
+                box-shadow: 5px 5px 15px rgb(186, 126, 126, 0.5);
+                border-radius: 10px;
+                display: flex;
+            }
+
+            #left {
+                height: 100%;
+                width: 60%;
+                padding: 5px;
+            }
+
+            #left img {
+                width: 100%;
+                margin-top: 20px;
+                display: block;
+            }
+
+            #left #size {
+                width: 95%;
+                height: 80px;
+                margin-top: 22px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            #size p {
+                color: #BA7E7E;
+                text-transform: uppercase;
+                font-size: 10px;
+                margin-bottom: 5px;
+                font-weight: 300;
+            }
+
+            #left #choose-size {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #left #choose-size #size-box {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.6s;
+                color: #BA7E7E;
+                font-size: 12px;
+                border: 1px solid rgba(186, 126, 126, 0.5);
+            }
+
+            #left #choose-size #size-box:hover {
+                color: white;
+                background: #BA7E7E;
+                cursor: pointer;
+            }
+
+            #right {
+                height: 100%;
+                width: 40%;
+                padding-left: 5px;
+                padding-right: 10px;
+            }
+
+            #right #info {
+                margin-top: 30px;
+                font-weight: 300;
+                color: #BA7E7E;
+                font-size: 10px;
+                text-transform: uppercase;
+            }
+
+            #right #info-heading {
+                font-weight: 400;
+            }
+
+            #right #price {
+                color: #BA7E7E;
+                font-size: 24px;
+                font-weight: 300;
+                margin-bottom: 5px;
+            }
+
+            #right #textinfo {
+                font-weight: 300;
+                font-size: 12px;
+                text-align: justify;
+            }
+
+            
+            #right #cta {
+                background: #D9AAB7;
+                text-transform: uppercase;
+                padding: 3px;
+                text-align: center;
+                font-weight: 300;
+                font-size: 14px;
+                color: white;
+                transition: 0.6s;
+            }
+
+            #right #cta:hover {
+                background: #BA7E7E;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="left">
+                <img src="http://mistillas.cl/wp-content/uploads/2018/04/Nike-Epic-React-Flyknit-%E2%80%9CPearl-Pink%E2%80%9D-01.jpg" alt="">
+                <div id="size">
+                    <p>choose size</p>
+                    <div id="choose-size">
+                        <div id="size-box">5</div>
+                        <div id="size-box">6</div>
+                        <div id="size-box">7</div>
+                        <div id="size-box">8</div>
+                        <div id="size-box">9</div>
+                        <div id="size-box">10</div>
+                        <div id="size-box">11</div>
+                        <div id="size-box">12</div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <p id="info">Women running show</p>
+                <h3 id="info-heading">NIKE EPIC REACT FLYKNIT</h3>
+                <p id="price">$150</p>
+                <p id="textinfo">The Nike Epic React Flyknit foam cushioning is responsive yet light-weight, durable yet soft.
+                    This creates a sensation that not only enhances the feeling of moving forward,
+                    but makes running feel fun, too.</p>
+                <div id="cta">add to cart</div>
+            </div>
+        </div>
+    </body>
+</html>
